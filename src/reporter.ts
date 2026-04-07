@@ -1,7 +1,7 @@
 import chalk from 'chalk'
 import { DailyReport } from './adapters/types'
 
-const WIDTH = 56
+const WIDTH = 62
 
 // CJK characters and emoji occupy 2 columns in monospace terminals
 function displayWidth(str: string): number {
