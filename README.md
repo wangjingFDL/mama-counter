@@ -1,4 +1,10 @@
-# mama-counter
+<div align="center">
+
+# 含妈量 CLI
+
+`mama-counter`
+
+</div>
 
 **含妈量**（Maternal Profanity Index，MPI）是衡量开发者当日心理健康状况的核心量化指标之一。
 
