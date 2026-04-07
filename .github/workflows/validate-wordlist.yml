@@ -1,0 +1,33 @@
+name: Validate Wordlist
+
+on:
+  pull_request:
+    paths:
+      - 'wordlist/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate JSON syntax
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('wordlist/zh.json','utf8')); console.log('zh.json OK')"
+          node -e "JSON.parse(require('fs').readFileSync('wordlist/en.json','utf8')); console.log('en.json OK')"
+
+      - name: Check for duplicate words
+        run: |
+          node -e "
+            const files = ['wordlist/zh.json', 'wordlist/en.json'];
+            for (const f of files) {
+              const wl = JSON.parse(require('fs').readFileSync(f, 'utf8'));
+              const all = Object.values(wl.categories).flat().map(w => w.toLowerCase());
+              const set = new Set(all);
+              if (set.size !== all.length) {
+                console.error('Duplicate words found in ' + f);
+                process.exit(1);
+              }
+            }
+            console.log('No duplicates found');
+          "
