@@ -52,11 +52,11 @@ program
   .description('Configure agent integrations')
   .action(() => {
     injectHook()
-    console.log('✓ Claude Code: hook injected into ~/.claude/settings.json')
+    console.log('✓ Claude Code: hook 已注入 ~/.claude/settings.json')
     console.log('')
-    console.log('Cursor and Codex are read automatically at report time — no setup needed.')
+    console.log('Cursor 和 Codex 出报告时自动读取，无需额外配置。')
     console.log('')
-    console.log('Run `cursetrack report` at the end of your day 🌙')
+    console.log('睡前跑一下 `mama report`，看看今天的含妈量 🌙')
   })
 
 // Today's report
@@ -118,7 +118,7 @@ program
       const mama = entries.reduce((sum, e) => sum + e.mamaCount, 0)
       console.log(`  ${date}  骂了 ${total} 次（含妈量 ${mama}）`)
     }
-    if (!found) console.log('  暂无记录，先跑 `cursetrack setup` 配置一下')
+    if (!found) console.log('  暂无记录，先跑 `mama setup` 配置一下')
     console.log()
   })
 

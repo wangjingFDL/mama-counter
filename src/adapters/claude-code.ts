@@ -6,7 +6,7 @@ import { readTodayEntries } from '../logger'
 
 const CLAUDE_DIR = join(homedir(), '.claude')
 const SETTINGS_PATH = join(CLAUDE_DIR, 'settings.json')
-const HOOK_COMMAND = 'cursetrack log --agent claude-code'
+const HOOK_COMMAND = 'mama log --agent claude-code'
 
 export const claudeCodeAdapter: AgentAdapter = {
   name: 'Claude Code',

@@ -1,9 +1,9 @@
 {
-  "name": "cursetrack",
+  "name": "mama-counter",
   "version": "0.1.0",
-  "description": "Track your daily profanity usage when talking to AI coding agents — 今日骂AI报告",
+  "description": "统计你每天骂了多少次 AI — 今日含妈量报告",
   "bin": {
-    "cursetrack": "./dist/cli.js"
+    "mama": "./dist/cli.js"
   },
   "scripts": {
     "build": "tsc",

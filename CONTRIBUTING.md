@@ -1,4 +1,4 @@
-# Contributing to cursetrack
+# Contributing to mama-counter
 
 ## 贡献骂法词库
 

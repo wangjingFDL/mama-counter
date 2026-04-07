@@ -4,7 +4,7 @@ import { homedir } from 'os'
 import { LogEntry } from './adapters/types'
 
 function getLogDir(): string {
-  const base = process.env.CURSETRACK_HOME ?? join(homedir(), '.cursetrack')
+  const base = process.env.CURSETRACK_HOME ?? join(homedir(), '.mama-counter')
   return join(base, 'logs')
 }
 
