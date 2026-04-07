@@ -1,0 +1,16 @@
+{
+  "categories": {
+    "general": [
+      "fuck", "shit", "damn", "ass", "crap",
+      "bitch", "wtf", "bastard", "bullshit",
+      "dumbass", "asshole", "cunt", "piss"
+    ]
+  },
+  "patterns": [
+    "f+u+c+k+",
+    "s+h+i+t+",
+    "f\\*+k",
+    "f\\*\\*k",
+    "sh\\*t"
+  ]
+}
