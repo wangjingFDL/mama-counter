@@ -10,7 +10,7 @@
 
 `mama-counter` 是一款面向 AI 辅助编程场景的情绪遥测工具，支持对 Claude Code、Codex、Cursor 等主流 coding agent 的对话数据进行实时采集与多维度分析，并于每日工作结束后生成标准化的骂 AI 报告。
 
-本工具已上架 [vibeStore](https://gunzo.cc/vibe)。vibeStore 是面向 AI builder 的产品展示平台，如果你也在用 AI 做东西，欢迎来上架获取真实用户反馈。
+本工具由 [Gunzo枪所](https://gunzo.cc) 出品。目前已上架 [vibeStore](https://gunzo.cc/vibe)。vibeStore 是面向 AI builder 的产品展示平台，如果你也在用 AI 做东西，欢迎来上架获取真实用户反馈。
 
 ```
 ╔═════════════════════════════════════════════════════════════╗
