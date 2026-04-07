@@ -1,6 +1,6 @@
 {
   "name": "mama-counter",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "统计你每天骂了多少次 AI — 今日含妈量报告",
   "bin": {
     "mama": "./dist/cli.js"
